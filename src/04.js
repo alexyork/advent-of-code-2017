@@ -8,6 +8,7 @@ export function passphraseValidator(passphrase) {
 
 export function passphraseValidator2(passphrase) {
   const passphraseWords = passphrase.split(' ');
-  const uniqueWords = _.chain(passphraseWords).map(word => _.sortBy( word.split('') ).join('')).uniq().value();
+  const uniqueWords = _.chain(passphraseWords)
+    .map(word => _.sortBy( word.split('') ).join('')).uniq().value();
   return (uniqueWords.length === passphraseWords.length);
 }
