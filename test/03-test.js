@@ -35,7 +35,7 @@ your puzzle input all the way to the access port?
 Your puzzle input is 368078.
 */
 
-describe('AoC 03-01 - Infinite two-dimensional memory grid', () => {
+xdescribe('AoC 03-01 - Infinite two-dimensional memory grid', () => {
 
   it('should calculate a grid of size 1 for number 1', () => {
     const result = calculateGridSize(1);
